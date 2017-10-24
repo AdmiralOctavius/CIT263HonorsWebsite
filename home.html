@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="UTC-8">
-	<title>Educational Empowerment</title>
+
+	<head>
+		<meta charset="UTC-8">
+		<title>Educational Empowerment</title>
+		<link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
+	</head>
 	<body>
-		<img src="leafLogo.png" alt="logo">
-		<h1>Educational <span>Empowerment<span></h1>
-		<div>
-			<form action="https://google.com">
-				<input type="text" name="username" id="user">
-				<input type="submit" value="LogIn">
-				<br>
-				<input type="text" name="password" id="password">
-				<input type="submit" value="SignUp">
-			</form>
+		<div id="headerContainer">
+			<div id="header">
+				<img src="leafLogo.png" alt="logo">
+				<h1>Educational <span>Empowerment<span></h1>
+			</div>
+			
+			<div>
+				<form action="https://google.com">
+					<input type="text" name="username" id="user">
+					<input type="submit" value="LogIn">
+					<br>
+					<input type="text" name="password" id="password">
+					<input type="submit" value="SignUp">
+				</form>
+		`	</div>
 		</div>
 		<!-- &nbsp; is a whitespace command that creates a non breaking space in text, not forcing a new line -->
 		<!--Don't need this with zybook/css method <h2><a href = "aboutus.html">About Us</a>&nbsp;<a href="contactus.html">Contact Us</a></h2>-->
-		
-		<ul>
-			<li><a href= "home.html">Home</a></li>
-			<li><a href = "contactus.html">Contact Us</a></li>
-			<li><a href = "aboutus.html">About Us</a></li>
-		<ul>
+		<div id="navbar">
+			<ul>
+				<li><a href= "home.html">Home</a></li>
+				<li><a href = "contactus.html">Contact Us</a></li>
+				<li><a href = "aboutus.html">About Us</a></li>
+			<ul>
+		</div>
 		
 			<div class="button"></div>
 			<p id="howtest">What do we do? We test you for your proficency in a variety of areas, then give you a package!
