@@ -9,11 +9,13 @@
 	<body>
 		<div id="headerContainer">
 			<div id="header">
-				<img src="leafLogo.png" alt="logo">
-				<h1>Educational <span>Empowerment<span></h1>
+				<img id="headerImage" src="leafLogo.png" alt="logo">
+				<div id="headerText">
+					<h1>Educational Empowerment</h1>
+				</div>
 			</div>
 			
-			<div>
+			<div class="form">
 				<form action="https://google.com">
 					<input type="text" name="username" id="user">
 					<input type="submit" value="LogIn">
@@ -21,7 +23,7 @@
 					<input type="text" name="password" id="password">
 					<input type="submit" value="SignUp">
 				</form>
-		`	</div>
+			</div>
 		</div>
 		<!-- &nbsp; is a whitespace command that creates a non breaking space in text, not forcing a new line -->
 		<!--Don't need this with zybook/css method <h2><a href = "aboutus.html">About Us</a>&nbsp;<a href="contactus.html">Contact Us</a></h2>-->
@@ -33,14 +35,21 @@
 			<ul>
 		</div>
 		
+		<div id="mainContent">
+			<div id="topContent">
 			<div class="button"></div>
-			<p id="howtest">What do we do? We test you for your proficency in a variety of areas, then give you a package!
-			<br>This package contains a study guide on the areas you need to work in. </p>
-			<div class="button"></div>
-			<p id="packages">Example packages can be found here!</p>
-			<div class="button"></div>
-			<p id="taketest">Click here to take the test!</p>
-			
+				<p id="howtest">What do we do? We test you for your proficency in a variety of areas, then give you a package!
+				<br>This package contains a study guide on the areas you need to work in. </p>
+			</div>
+			<div id="middleContent">
+				<div class="button"></div>
+				<p id="packages">Example packages can be found here!</p>
+			</div>
+			<div id="bottomContent">
+				<div class="button"></div>
+				<p id="taketest">Click here to take the test!</p>
+			</div>
+		</div>
 			<footer>
 				<ul>
 					<li><a href= "home.html">Home</a></li>
