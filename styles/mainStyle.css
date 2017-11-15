@@ -1,6 +1,6 @@
 *{
 	font-family: Verdana, Geneva, sans-serif;
-	color: gray;
+	color: #666666;
 }
 
 a {
@@ -13,14 +13,22 @@ a:hover {
 }
 
 html{
-	background-color:#59b9f9;
+	background: #59b9f9; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, white, #59b9f9); /* Safari */
+	background: -moz-radial-gradient(circle, white, #59b9f9); /* Firefox 3.6 to 15 */
+	background: -o-radial-gradient(circle, white, #59b9f9); /* Opera 11.6 to 12.0 */
+	background: radial-gradient(circle, white, #59b9f9); /* Standard syntax */
+	background-repeat: no-repeat;
+	height: 100%;
 }
 
 body{
+	border-radius: 15px;
 	width: 96%;
 	background-color: #f1f1f1;
 	margin: auto;
 	margin-top: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #headerContainer{
@@ -48,41 +56,56 @@ body{
 	padding:0px;
 	margin:0;
 }
-.form{
+.form{		
 	width:auto;
 	position: relative;
 	float: right;
 }
 
 #navbar {
-	color: red;
 	background-color: lightgray; 
 	padding-bottom: 5px; 
-	padding-top: 5px; 
+	padding-top: 5px;
+	
+	
 }
 
 #navbar li {
 	display: inline; 
 	margin-right: 25px;
-	transition: color 0.2s ease;
 }
 
-#navbar li:hover {
+#navbar a {
+	padding: 5px;
+	border-radius: 10px;	
+	transition: color 0.2s ease;
+	color: darkslategrey;
+}
+
+#navbar a:hover {
 	color:#3a3a3a;
 	background-color: gray; 
 }
 
 footer{
-	
+	background-color: lightgray; 
+	padding-bottom: 5px; 
+	padding-top: 5px; 
+	border-radius: 0px 0px 15px 15px;
 }
 
 footer li {
 	display: inline; 
 	margin-right: 25px;
+}
+footer a {
+	padding: 5px;
+	border-radius: 10px;	
 	transition: color 0.2s ease;
+	color: darkslategrey;
 }
 
-footer li:hover {
+footer a:hover {
 	color:#3a3a3a;
 	background-color: gray; 
 }
