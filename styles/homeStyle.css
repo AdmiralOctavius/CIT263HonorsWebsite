@@ -1,0 +1,8 @@
+.button {
+	height: 100px;
+	transition: background-color 0.2 ease;
+}
+
+.button:hover {
+	background-color: black
+}
