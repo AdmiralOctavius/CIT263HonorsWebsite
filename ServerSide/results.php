@@ -295,7 +295,7 @@
 	
 	$percentage = ($questionsCorrect / $amtQuestions) * 100;
 	
-	$myfile = fopen("testfile.txt", "w");
+	//$myfile = fopen("testfile.txt", "w");
 	$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
 	$txt = "Congratulations! You Got: " + $questionsCorrect + ". Out of: " + $amtQuestions + " right!\n";
 	fwrite($myfile, $txt);
@@ -304,7 +304,9 @@
 	fclose($myfile);
 ?>
 	<p id="Percentage">Congratulations your final score was: <span id="PercentNumber"><?php echo $percentage; ?></span></p>
-	<p id="content">To download a packet of study guide material based on your score please click on the button below. <br> To return to the start of the test, navigate back to the homepage! <br> Thanks for using Educational Empowerment!</p>
+	<p id="content">To download a packet of study guide material based on your score please click on the button below. </p>
+	<a href="newfile.txt" download="ResultsPacket.txt" id="DownloadButton">Download Text</a>
+	<br> To return to the start of the test, navigate back to the homepage! <br> Thanks for using Educational Empowerment!</p>
 	</div>
 		<footer>
 				<ul>
