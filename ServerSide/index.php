@@ -7,6 +7,7 @@
 
 <?php
 $name = "PHP";
+$AorF = false;
 echo "<h1>Hello, $name!</h1>";
 echo "<form method='post' id='actTest' action='results.php'>";
 ?>
@@ -22,13 +23,32 @@ if($i == 39){ echo "<img src='questions/questionPre39.png' alt='questionPre39'>"
 		<div class="QuestionImages">
 			<img src='questions/question<?php echo $i ?>.png' alt='question<?php echo $i ?>'>
 		</div>
-		<div class="questionResponses">
-			<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>A<br>
-			<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">B<br>
-			<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">C<br>
-			<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">D<br>
-			<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">E
-		</div>
+		<?php 
+		if($AorF == false){
+			?><div class="questionResponses">
+				<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>A<br>
+				<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">B<br>
+				<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">C<br>
+				<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">D<br>
+				<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">E
+			</div>
+			<?php 
+			$AorF = true;
+		}
+		else{
+			?>
+			<div class="questionResponses">
+				<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>F<br>
+				<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">G<br>
+				<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">H<br>
+				<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">J<br>
+				<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">K
+			</div>
+			<?php
+				$AorF = false;
+				
+		}
+		?>
 	</div>
 <?php }
 ?>
