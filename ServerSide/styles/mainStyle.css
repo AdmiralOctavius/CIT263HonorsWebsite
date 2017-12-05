@@ -120,9 +120,29 @@ footer a:hover {
 	background-color: gray; 
 }
 
+#DownloadButton{
+	background-color: #99d6e6;
+    color: #333333;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
+#DownloadButton2{
+	 background-color: #99d6e6;
+    color: #333333;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
-
+#ButtonContainer{
+	height:50px;
+	width:550px;
+	margin:10px;
+}
 
 
 

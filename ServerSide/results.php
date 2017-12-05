@@ -3,22 +3,20 @@
 		<meta charset="UTC-8">
 		<title>Hello PHP</title>
 		<link rel="icon" href="mini-EducationalEmpowerment.png" />
-		<link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
 	</head>
 <body>
 
-<div id="headerContainer">
+		<div id="headerContainer">
 			<div id="header">
 				<img id="headerImage" src="EducationalEmpowerment.png" alt="logo">
 			<div id="headerText">
 				<h1 >Educational Empowerment</h1>
 			</div>
-			</div>
+		</div>
 			
 		</div>
-		<!-- &nbsp; is a whitespace command that creates a non breaking space in text, not forcing a new line -->
-		<!--Don't need this with zybook/css method <h2><a href = "aboutus.html">About Us</a>&nbsp;<a href="contactus.html">Contact Us</a></h2>-->
 		<div id="navbar">
 			<ul>
 				<li><a href= "home.html">Home</a></li>
@@ -27,30 +25,11 @@
 			<ul>
 		</div>
 		<div id="mainContent">
+		
 <?php 
 	$amtQuestions = 60;
 	$questionsCorrect = 0;
-	/**for($i = 1; $i <= $amtQuestions; $i++){
-//Using braces allows you to append variables to strings
-		//$answer = "A{$i}";
-		//$question = "question{$i}";
-		//if($_POST[$question] == $answer){
-			//echo "<p>Correct!</p>";	
-			//$questionsCorrect++;
-		//}
-		
-		echo "<p>Hi</p>";
-		echo "<p>This is the result for question";
-		echo $i;
-		if($_POST["question10"] == "A10"){
-			echo "<p>GotQuestion10</p>";
-		}
-		echo $questionsCorrect;
-	}
-	$percentage = ($questionsCorrect / $amtQuestions) * 100;
-	echo "<br><br>";
-	echo $percentage;
-?>**/
+	
 	
 	if($_POST[question1] == "D1"){
 		//echo "Got Question 1";
@@ -303,11 +282,15 @@
 	fwrite($myfile, $txt);
 	fclose($myfile);
 ?>
-	<p id="Percentage">Congratulations your final score was: <span id="PercentNumber"><?php echo $percentage; ?></span></p>
-	<p id="content">To download a packet of study guide material based on your score please click on the second button below. <br>To download the stats from this test, click on the first button.</p>
-	<a href="newfile.txt" download="ResultsPacket.txt" id="DownloadButton">Download Test Results</a>
-	<a href="practicemathplacementtest1.pdf" download="StudyGuide.pdf" id="DownloadButton2">Download Study Guide</a>
-	<br> To return to the start of the test, navigate back to the homepage! <br> Thanks for using Educational Empowerment!</p>
+		<p id="Percentage">Congratulations your final score was: <span id="PercentNumber"><?php echo $percentage; ?></span></p>
+		<p id="content">To download a packet of study guide material based on your score please click on the second button below. <br>To download the stats from this test, click on the first button.</p>
+		<div id="buttonContainer">
+			<a href="newfile.txt" download="ResultsPacket.txt" id="DownloadButton">Download Test Results</a>
+			<a href="practicemathplacementtest1.pdf" download="StudyGuide.pdf" id="DownloadButton2">Download Study Guide</a>
+		</div>
+		<div>
+			<br> To return to the start of the test, navigate back to the homepage! <br> Thanks for using Educational Empowerment!</p>
+		</div>
 	</div>
 		<footer>
 				<ul>

@@ -2,17 +2,17 @@
 <html>
 	<meta charset="UTC-8">
 	<title>Hello PHP</title>
-	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="styles/testStyle.css">
 <body>
 
 <?php
-$name = "PHP";
+	
 $AorF = false;
-echo "<h1>Hello, $name!</h1>";
+
 echo "<form method='post' id='actTest' action='results.php'>";
 ?>
 <?php
-//Hard code this for now, make this in a text file later
+
 $amtQuestions = 60;
 for($i = 1; $i <= $amtQuestions; $i++)
 { if($i == 33){ echo "<img src='questions/questionPre33.png' alt='questionPre33'>";}
@@ -26,11 +26,21 @@ if($i == 39){ echo "<img src='questions/questionPre39.png' alt='questionPre39'>"
 		<?php 
 		if($AorF == false){
 			?><div class="questionResponses">
-				<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>A<br>
-				<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">B<br>
-				<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">C<br>
-				<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">D<br>
-				<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">E
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>A<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">B<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">C<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">D<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">E
+				</label>
 			</div>
 			<?php 
 			$AorF = true;
@@ -38,11 +48,21 @@ if($i == 39){ echo "<img src='questions/questionPre39.png' alt='questionPre39'>"
 		else{
 			?>
 			<div class="questionResponses">
-				<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>F<br>
-				<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">G<br>
-				<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">H<br>
-				<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">J<br>
-				<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">K
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="A<?= $i ?>" checked>F<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="B<?= $i ?>">G<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="C<?= $i ?>">H<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="D<?= $i ?>">J<br>
+				</label>
+				<label class="questionResponses">
+					<input type="radio" name="question<?= $i ?>" value="E<?= $i ?>">K
+				</label>
 			</div>
 			<?php
 				$AorF = false;
@@ -52,7 +72,9 @@ if($i == 39){ echo "<img src='questions/questionPre39.png' alt='questionPre39'>"
 	</div>
 <?php }
 ?>
-<input type="submit" value="Submit" name="submitForm">
+<div id="button">
+	<input class="button" type="submit" value="Submit" name="submitForm">
+</div>
 </form>
 </body>	
 </html>
