@@ -3,7 +3,7 @@
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	transition: height 0.5s ease;
+	transition: height 0.5s;
 }
 .button:hover{
 	height: 240px;
@@ -15,13 +15,7 @@
 
 .button p {
 	padding: 10px;
-	margin-top: -20px; 
-	display: none;
-	transition: display 0.5s ease;
-}
-
-.button p:hover {
-	display: initial !important; 
+	margin-top: -20px;
 }
 
 .button img {
@@ -33,29 +27,3 @@
 	border-radius: 15px;
 	float: left; 
 }
-
-.mouseover {
-	height: 240px;
-	background-color: white;
-	border-radius: 15px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.mouseover h2 {
-	padding-top: 20px; 
-}
-
-.mouseover p {
-	padding: 10px;	
-}
-
-.mouseover img {
-	width: 400px;
-	height: 200px; 
-	margin-left: 20px; 
-	margin-top: 20px; 
-	margin-right: 25px; 
-	border-radius: 15px;
-	float: left; 
-}
-
