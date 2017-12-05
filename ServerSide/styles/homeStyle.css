@@ -1,9 +1,29 @@
 .button {
-	height: 100px;
+	height: 120px;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: height 0.5s;
 }
+.button:hover{
+	height: 240px;
+}
+
+.button h2 {
+	padding-top: 20px; 
+}
+
 .button p {
-	padding: 10px; 
+	padding: 10px;
+	margin-top: -20px;
+}
+
+.button img {
+	width: 200px;
+	height: 100px; 
+	margin-left: 10px; 
+	margin-top: 10px; 
+	margin-right: 25px; 
+	border-radius: 15px;
+	float: left; 
 }

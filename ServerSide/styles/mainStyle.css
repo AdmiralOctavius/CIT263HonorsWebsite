@@ -12,15 +12,17 @@ a:hover {
 	color:#3a3a3a;
 }
 
+
 html{
 	background: #59b9f9; /* For browsers that do not support gradients */
 	background: -webkit-radial-gradient(circle, white, #59b9f9); /* Safari */
 	background: -moz-radial-gradient(circle, white, #59b9f9); /* Firefox 3.6 to 15 */
 	background: -o-radial-gradient(circle, white, #59b9f9); /* Opera 11.6 to 12.0 */
 	background: radial-gradient(circle, white, #59b9f9); /* Standard syntax */
-	background-repeat: no-repeat;
 	height: 100%;
 }
+
+
 
 body{
 	border-radius: 15px;
@@ -48,6 +50,7 @@ body{
 	width: 100px;
 	height: 100px;
 	margin-top: 15px;
+	border-radius: 90px; 
 }
 
 #headerText{
@@ -120,38 +123,11 @@ footer a:hover {
 	background-color: gray; 
 }
 
-#DownloadButton{
-	background-color: #99d6e6;
-    color: #333333;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
 
-#DownloadButton2{
-	 background-color: #99d6e6;
-    color: #333333;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
 
-#ButtonContainer{
-	height:50px;
-	width:550px;
-	margin:10px;
-}
 
-#bodyIn{
-	border-radius: 15px;
-	width: 96%;
-	background-color: #f1f1f1;
-	margin: auto;
-	margin-top: 2%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
+
 
 
 
