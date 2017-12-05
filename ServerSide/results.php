@@ -2,15 +2,15 @@
 	<head>
 		<meta charset="UTC-8">
 		<title>Hello PHP</title>
-		<link rel="icon" href="mini-leafLogo.png" />
-		<link rel="stylesheet" type="text/css" href="mainStyle.css">
+		<link rel="icon" href="mini-EducationalEmpowerment.png" />
+		<link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	</head>
 <body>
 
 <div id="headerContainer">
 			<div id="header">
-				<img id="headerImage" src="leafLogo.png" alt="logo">
+				<img id="headerImage" src="EducationalEmpowerment.png" alt="logo">
 			<div id="headerText">
 				<h1 >Educational Empowerment</h1>
 			</div>
@@ -22,8 +22,8 @@
 		<div id="navbar">
 			<ul>
 				<li><a href= "home.html">Home</a></li>
-				<li><a href = "contactus.html">Contact Us</a></li>
-				<li><a href = "aboutus.html">About Us</a></li>
+				<li><a href = "contactUs.html">Contact Us</a></li>
+				<li><a href = "aboutUs.html">About Us</a></li>
 			<ul>
 		</div>
 		<div id="mainContent">
@@ -297,22 +297,23 @@
 	
 	//$myfile = fopen("testfile.txt", "w");
 	$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-	$txt = "Congratulations! You Got: " + $questionsCorrect + ". Out of: " + $amtQuestions + " right!\n";
+	$txt = "Congratulations! You Got: " . $questionsCorrect . ". Out of: " . $amtQuestions . " right!\n";
 	fwrite($myfile, $txt);
-	$txt = "Your percentage was: " + $percentage + ".\n";
+	$txt = "Your percentage was: " . $percentage . ".\n";
 	fwrite($myfile, $txt);
 	fclose($myfile);
 ?>
 	<p id="Percentage">Congratulations your final score was: <span id="PercentNumber"><?php echo $percentage; ?></span></p>
-	<p id="content">To download a packet of study guide material based on your score please click on the button below. </p>
-	<a href="newfile.txt" download="ResultsPacket.txt" id="DownloadButton">Download Text</a>
+	<p id="content">To download a packet of study guide material based on your score please click on the second button below. <br>To download the stats from this test, click on the first button.</p>
+	<a href="newfile.txt" download="ResultsPacket.txt" id="DownloadButton">Download Test Results</a>
+	<a href="practicemathplacementtest1.pdf" download="StudyGuide.pdf" id="DownloadButton2">Download Study Guide</a>
 	<br> To return to the start of the test, navigate back to the homepage! <br> Thanks for using Educational Empowerment!</p>
 	</div>
 		<footer>
 				<ul>
 					<li><a href= "home.html">Home</a></li>
-					<li><a href = "contactus.html">Contact Us</a></li>
-					<li><a href = "aboutus.html">About Us</a></li>
+					<li><a href = "contactUs.html">Contact Us</a></li>
+					<li><a href = "aboutUs.html">About Us</a></li>
 				<ul>
 		</footer>
 	</body>

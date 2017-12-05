@@ -2,7 +2,7 @@
 <html>
 	<meta charset="UTC-8">
 	<title>Hello PHP</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 <body>
 
 <?php

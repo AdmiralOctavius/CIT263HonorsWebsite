@@ -1,0 +1,35 @@
+body{
+	background-color:red;
+}
+#actTest{
+	width:1000px;
+	
+}
+.QuestionBlock{
+	position:Relative;
+	width:900px;
+	height:auto;
+	margin:auto;
+	background-color:blue;
+}
+
+.QuestionBlock h2{
+	color:white;
+	width:600px;
+	margin:0px;
+}
+
+.QuestionImages{
+	width:800px;
+	margin:auto;
+}
+.QuestionImages img{
+	margin: 10px;
+	width: auto;
+} 
+
+.QuestionBlock questionResponses{
+	width: auto;
+	height:auto;
+	position:relative;
+}

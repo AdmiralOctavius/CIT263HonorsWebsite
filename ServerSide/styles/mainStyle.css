@@ -91,11 +91,13 @@ body{
 }
 
 #mainContent {
-	padding-left: 15px; 
+	width: 96%;
+	margin: auto; 
 }
 
 
 footer{
+	margin-top: 2%;
 	background-color: lightgray; 
 	padding-bottom: 1px; 
 	padding-top: 1px; 
