@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<meta charset="UTC-8">
-	<title>Hello PHP</title>
+	<title>Test Begins</title>
 	<link rel="stylesheet" type="text/css" href="styles/testStyle.css">
+	<link rel="icon" href="images/mini-EducationalEmpowerment.png" />
 <body>
 
 <?php

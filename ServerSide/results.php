@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<meta charset="UTC-8">
-		<title>Hello PHP</title>
-		<link rel="icon" href="mini-EducationalEmpowerment.png" />
+		<title>Test Results</title>
+		<link rel="icon" href="images/mini-EducationalEmpowerment.png" />
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/testStyle.css">
 	</head>
@@ -10,7 +10,7 @@
 	<div id="bodyIn">
 		<div id="headerContainer">
 			<div id="header">
-				<img id="headerImage" src="EducationalEmpowerment.png" alt="logo">
+				<img id="headerImage" src="images/EducationalEmpowerment.png" alt="logo">
 			<div id="headerText">
 				<h1 >Educational Empowerment</h1>
 			</div>
