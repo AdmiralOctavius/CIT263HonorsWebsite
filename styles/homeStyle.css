@@ -1,9 +1,52 @@
 .button {
-	height: 100px;
+	height: 120px;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.button p {
-	padding: 10px; 
+
+.button h2 {
+	padding-top: 20px; 
 }
+
+.button p {
+	padding: 10px;
+	padding-top: 0px; 
+	display: none;
+}
+
+.button img {
+	width: 200px;
+	height: 100px; 
+	margin-left: 10px; 
+	margin-top: 10px; 
+	margin-right: 25px; 
+	border-radius: 15px;
+	float: left; 
+}
+
+.mouseover {
+	height: 240px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button h2 {
+	padding-top: 20px; 
+}
+
+.mouseover p {
+	padding: 10px;	
+}
+
+.mouseover img {
+	width: 400px;
+	height: 200px; 
+	margin-left: 20px; 
+	margin-top: 20px; 
+	margin-right: 25px; 
+	border-radius: 15px;
+	float: left; 
+}
+

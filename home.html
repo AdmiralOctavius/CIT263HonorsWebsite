@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	</head>
 	<body>
+	<div id="background"> 
 		<div id="headerContainer">
 			<div id="header">
 				<img id="headerImage" src="EducationalEmpowerment.png" alt="logo">
@@ -39,19 +40,37 @@
 		</script>
 		-->
 		
-			<div id="topContent">
-				<div class="button">
-					<p id="howtest">What do we do? We test you for your proficency in a variety of areas, then give you a package!
-					<br>This package contains a study guide on the areas you need to work in. </p>
-				</div>
+			<div id="topContent" onmouseover="mouseOver()" onmouseout="mouseOut()">
+				<script>
+				function mouseOver()
+				{
+					document.getElementById("topContent").addclass('mouseover');
+				}
+				function mouseOut()
+				{
+					document.getElementById("topContent").removeclass('mouseover');
+				}
+				</script>
+				
+					<div class="button">
+						<img id="thumbnail" src="WhatWeDoThumbnail.jpg" alt="What we do">
+						<h2> What We Do </h2>
+						<p id="howtest">What do we do? We test you for your proficency in a variety of areas, then give you a package!
+						<br>This package contains a study guide on the areas you need to work in. </p>
+					</div>
+				
 			</div>
 			<div id="middleContent">
 				<div class="button">
+					<img id="thumbnail" src="PackageThumbnail.jpg" alt="Packages">
+					<h2>Example Packages </h2>
 					<p id="packages">Example packages can be found here!</p>
 				</div>
 			</div>
 			<div id="bottomContent">
 				<div class="button">
+					<img id="thumbnail" src="testThumbnail.jpg" alt="Take the Test">
+					<h2> Take the Test </h2>
 					<p id="taketest">Click here to take the test!</p>
 				</div>
 			</div>
@@ -63,6 +82,7 @@
 					<li><a href = "aboutUs.html">About Us</a></li>
 				<ul>
 			</footer>
+		</div>
 	</body>
 	
 	
