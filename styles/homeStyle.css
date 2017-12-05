@@ -3,6 +3,10 @@
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: height 0.5s ease;
+}
+.button:hover{
+	height: 240px;
 }
 
 .button h2 {
@@ -11,8 +15,13 @@
 
 .button p {
 	padding: 10px;
-	padding-top: 0px; 
+	margin-top: -20px; 
 	display: none;
+	transition: display 0.5s ease;
+}
+
+.button p:hover {
+	display: initial !important; 
 }
 
 .button img {
@@ -32,7 +41,7 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.button h2 {
+.mouseover h2 {
 	padding-top: 20px; 
 }
 

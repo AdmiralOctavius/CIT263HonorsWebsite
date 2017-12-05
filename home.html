@@ -10,7 +10,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	</head>
 	<body>
-	<div id="background"> 
 		<div id="headerContainer">
 			<div id="header">
 				<img id="headerImage" src="EducationalEmpowerment.png" alt="logo">
@@ -40,18 +39,18 @@
 		</script>
 		-->
 		
-			<div id="topContent" onmouseover="mouseOver()" onmouseout="mouseOut()">
-				<script>
-				function mouseOver()
-				{
-					document.getElementById("topContent").addclass('mouseover');
-				}
-				function mouseOut()
-				{
-					document.getElementById("topContent").removeclass('mouseover');
-				}
+			<div id="topContent" ><!--onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"-->
+				<!--<script>
+					function mouseOver(this)
+					{
+						this.classList.toggle("mouseover");
+					}
+					function mouseOut(this)
+					{
+						document.getElementById("topContent").classList.toggle("button");
+					}
 				</script>
-				
+				-->
 					<div class="button">
 						<img id="thumbnail" src="WhatWeDoThumbnail.jpg" alt="What we do">
 						<h2> What We Do </h2>
@@ -82,7 +81,6 @@
 					<li><a href = "aboutUs.html">About Us</a></li>
 				<ul>
 			</footer>
-		</div>
 	</body>
 	
 	
