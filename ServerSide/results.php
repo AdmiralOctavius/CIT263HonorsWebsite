@@ -4,10 +4,10 @@
 		<title>Hello PHP</title>
 		<link rel="icon" href="mini-EducationalEmpowerment.png" />
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
+		<link rel="stylesheet" type="text/css" href="styles/testStyle.css">
 	</head>
 <body>
-
+	<div id="bodyIn">
 		<div id="headerContainer">
 			<div id="header">
 				<img id="headerImage" src="EducationalEmpowerment.png" alt="logo">
@@ -299,5 +299,6 @@
 					<li><a href = "aboutUs.html">About Us</a></li>
 				<ul>
 		</footer>
+	</div>
 	</body>
 </html>
